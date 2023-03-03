@@ -1,8 +1,10 @@
 .signIn{
     background-color: black;
-    height: 100vh;
-    width: 100vw;
+    
+    min-height: 100vh;
+   
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
 }
@@ -13,10 +15,14 @@ box-shadow: 0px 0px 4px rgba(177, 177, 177, 0.5);
 border-radius: 20px 0px;
 width: 513px;
 max-width: 70vw;
+margin: 2em 0;
 padding: 25px 40px;
 }
+.invalid{
+    border-color: #FF413B !important;
+}
 .logo{
-
+height: fit-content;
 border-radius: 8.06906px 0px;
 background-image: linear-gradient( #007B1E, #00D634);
 display: flex;
@@ -87,6 +93,85 @@ width: 100%;
 box-sizing: border-box;
 
 }
+.fileInp{
+    font-weight: 500;
+    font-size: 16px;
+
+    border: 1px solid #ECECEC;
+border-radius: 0 0 0 0px ;
+display: block;
+outline: none;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 1.5em;
+width: 100%;
+box-sizing: border-box;
+  
+}
+.fileInp span{
+display: none;
+}
+.done{
+    border: 1px solid #009925 !important;
+}
+.done svg{
+    cursor: default !important;
+    color: #048848 !important;
+}
+.done p{
+ 
+    color: #010101 !important;
+     
+}
+.done .upload{
+    display: none;
+}
+.prev{
+    display: none;
+}
+
+
+.done .prev{
+    text-decoration-line: underline;
+text-transform: uppercase;
+display: block;
+cursor: pointer;
+color: #009925 !important;
+}
+.done span{
+display: inline;
+position: relative;
+top: 3px;
+
+margin-left: 0.3em;
+}
+.fileInp p{
+
+}
+.file4{
+    border-radius: 0px 0  10px 0 ;
+}
+.file1{margin-top: 1.5em;
+    border-radius: 10px 0 0 0px ;
+
+}
+.fileInp svg{
+    color: #979797;
+    cursor: pointer;
+}
+.fileInp p{
+    margin-top: 0;
+    font-weight: 500;
+font-size: 14px;
+line-height: 33px;
+/* identical to box height, or 232% */
+
+letter-spacing: -0.01em;
+text-transform: uppercase;
+
+color: #808080;
+}
 .signIn .inp1{
     border-radius: 10px 0 0 0px ;
     margin-top: 1.5em;
@@ -120,6 +205,61 @@ border-bottom: 2px solid #009925;}
 .btnLink{
     margin-left: 2em;
 }
+.signIn input[type=password] {
+font-size: 19px;
+padding: 1.2em;
+}
+.signIn input[type=file] {
+   width: 0;
+   height: 0;
+   padding: 0;
+   opacity: 0;
+   pointer-events: none;
+    }
+  
+.imgModal, .modalOverlay {
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 11;
+}
+.modalOverlay img{
+  max-width: 90vw;
+  max-height: 90vh;
+}
+.modalOverlay {
+    background: rgba(49,49,49,0.8);
+}
+.modal-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 1em;
+    border-radius: 20px;
+  
+    z-index: 12;
+
+   display: unset;
+width: 500px;
+height: 571px;
+}
+.vCenter{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.modal-content img{
+width: 100%;
+    max-width: 300px;
+    height: 300px;
+}
 .signIn-action button{
 
     font-weight: 700;
@@ -132,11 +272,64 @@ border-bottom: 2px solid #009925;}
     border-radius: 8px;
     border: none;
 }
+.formTop{
+    display: flex;
+    justify-content: space-between;
+}
+
+.errBanner{
+    
+    color: white;
+    background: #E11900;
+border-radius: 12px;
+text-align: start;
+display: flex;
+height: fit-content;
+padding: 20px;
+position: relative;
+ top: -92px;
+align-items: center;
+width: 70%;
+opacity: 0;
+transition: 0.5s ease-in;
+}
+.errMsg span{
+    display: block;
+}
+.errBannerAppear{
+position: relative;
+
+    transform: translateY(89px);
+    opacity: 1;
+}
+.errBanner svg{
+    cursor: pointer;
+background-color: white;
+color: #E11900;
+border-radius: 100%;
+padding: 0.3em;
+margin-right: 17px;
+transition: 0.7s;
+
+}
+.errBanner svg:hover{
+    background-color: transparent;
+    color: white;
+}
+
+
+.errBanner p{
+    margin: 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
 .logIn-txt span{
     font-weight: 700;
     color: #000000;
 }
 .otpDiv input{
+    font-size: 20px;
     border: 1px solid #ECECEC;
     border-radius: 10px 0px;
     width: 56px !important;
@@ -201,6 +394,14 @@ line-height: 22px;
     .signIn-action{
         margin-top: 2em !important;
     }
+    .errBanner svg{
+        margin-right: 0.7em;
+        font-size: 14px;
+    }
+    .errBanner{
+padding: 15px;
+width: 62%;
+    }
     .logo p{
 font-size: 28px;
 line-height: 35px;
@@ -209,8 +410,16 @@ line-height: 35px;
         margin-bottom: 10px;
     }
     .signIn input{
-        padding:1.5em;
+        padding:1.5em 1em;
         font-size: 14px;
+    }
+    .fileInp{
+        padding:1.5em 1em;
+        font-size: 14px;
+    }
+    
+    .fileInp svg{
+   transform: scale(0.9);
     }
     input::placeholder{
         font-size: 14px;
