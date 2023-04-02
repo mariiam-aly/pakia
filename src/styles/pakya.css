@@ -18,6 +18,42 @@ max-width: 70vw;
 margin: 2em 0;
 padding: 25px 40px;
 }
+
+.reserveScreen .stepNo{
+    background-color: white;
+    border: 1px solid #ECECEC;
+box-shadow: 0px 0px 4px rgba(177, 177, 177, 0.5);
+border-radius: 20px 0px;
+padding: 0.9em 0.9em;
+display: inline-block;  
+font-size: 18px !important;
+font-weight: 700 !important;
+margin-right: 1em;
+}
+.steps{
+    margin-top: 2em;
+}
+.step{
+    display: flex;
+    margin-bottom: 2em;
+    align-items: center;
+
+}
+.stepTitle{
+    font-size: 18px;
+    font-weight: 700;
+}
+.stepInfo{
+    font-size: 16px;
+    font-weight: 400;
+color:#626262;
+}
+.stepTxt{
+    display: inline-block;
+}
+.stepTxt p{
+    margin-bottom: 0;
+}
 .invalid{
     border-color: #FF413B !important;
 }
@@ -234,21 +270,64 @@ font-size: 19px;
 .modalOverlay {
     background: rgba(49,49,49,0.8);
 }
-.modal-content {
+.modal-contentRev {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     line-height: 1.4;
     background: #f1f1f1;
-    padding: 14px 1em;
+    padding:  1em;
     border-radius: 20px;
-  
+  width: 90vw;
     z-index: 12;
-
+max-width: 500px;
    display: unset;
-width: 500px;
-height: 571px;
+   padding-top: 4em;
+
+
+}
+.confirm1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 0.5em;
+}
+.confirm2{
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 2em;
+}
+.check{
+    text-align: center;
+    font-size: 15vw;
+    position: relative;
+}
+.check svg{
+position: absolute;
+bottom:10px;
+transform: translateX(-50%);
+color: #009925;
+background-color: white;
+border-radius: 100%;
+max-width: 150px;
+max-height: 150px;
+min-width: 120px;
+min-height: 120px;
+
+}
+.confirm{
+    font-weight: 700;
+    font-size: 16px;
+  cursor: pointer;
+  white-space: nowrap;
+    padding: 15px 70px;
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #009925 -0.1%, #00741C 112.77%);
+    border-radius: 8px;
+    border: none;
+    width: 100%;
 }
 .vCenter{
     position: relative;
@@ -329,6 +408,7 @@ transition: 0.7s;
     color: #000000;
 }
 .otpDiv input{
+    font-weight: 700;
     font-size: 24px;
     border: 1px solid #ECECEC;
     border-radius: 10px 0px;
@@ -351,7 +431,1604 @@ color: #009925;
 
 cursor: pointer;
 }
+.navBar{
+    padding: 0 7vw;
+    position: fixed;
+width: 100%;
+top: 0;
+z-index: 10;
+   padding-top: 31px;
+   padding-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s;
+}
+.blckBg{
+    background: black;
+}
+.div1{
+    background-repeat: no-repeat;
+    background-size: cover;
 
+    padding: 0 7vw;
+ height: 100vh;
+}
+.loginNav{
+    display: flex;
+    align-items: center;
+}
+.loginNav  .navLogo{
+    margin-right: 2em;
+}
+.usrProfile{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 15.0277px;
+    line-height: 21px;
+    /* identical to box height, or 143% */
+    
+    letter-spacing: -1px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    
+    color: #FFFFFF;
+    
+}
+.recent p{
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 8px;
+    color: #111111;
+}
+.recents{
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+    margin-bottom: 0.5em;
+    padding-bottom: 1em;
+}
+.recents div{
+    white-space: nowrap;
+display: inline-block;
+cursor: pointer;
+margin-right: 1em;
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 18px;
+border: 0.714474px solid #BBBBBB;
+border-radius: 8.57368px;
+padding: 13px;
+color: #111111;
+}
+
+.usrProfile p{
+    margin-left: 0.5em;
+    margin-bottom: 0;
+}
+.usrProfile svg{
+    color: white;
+}
+.navLogo{
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 130px;
+}
+a{
+    text-decoration: none !important;
+}
+.navBar a{
+margin-left: 3.2vw;
+    font-weight: 500;
+    font-size: 15.0277px;
+    line-height: 21px;
+  text-decoration: none;
+    letter-spacing: -1px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    
+    color: #FFFFFF;  
+}
+.loginBtn{
+border: none;
+
+background: linear-gradient(90deg, #009925 -0.1%, #00741C 112.77%);
+border-radius: 8px;
+font-weight: 700;
+font-size: 16px;
+letter-spacing: -1px;
+padding: 10px 50px;
+color: #FFFFFF;
+
+margin-right: 1em;
+}
+.sinupBtn{
+    border-radius: 8px;
+font-weight: 700;
+font-size: 16px;
+letter-spacing: -1px;
+background-color: transparent;
+color: #FFFFFF;
+padding: 10px 50px;
+border: 2px solid white;
+}
+.p1{
+    font-size: 41.466px;
+line-height: 61px;
+text-transform: uppercase;
+font-feature-settings: 'salt' on, 'liga' off;
+font-weight: 700;
+
+color: #FFFFFF;
+}
+
+.p1 span{
+    font-size: 41.466px;
+    font-weight: 700;
+    border-bottom: 6.91099px solid #009925;
+}
+.p2{
+    font-weight: 400 !important;
+    font-size: 41.466px;
+    color: #FFFFFF;
+border: none !important;
+}
+
+.p3{
+    font-family: 'Plus Jakarta Sans' !important;
+font-style: normal;
+font-weight: 400;
+font-size: 20.733px;
+line-height: 31px;
+font-feature-settings: 'salt' on, 'liga' off;
+
+color: #E2E2E2;
+
+}
+.p3 span{
+    font-weight: 700;
+}
+.div1 .row{
+  padding-top: 11em;
+  padding-bottom: 4em;
+}
+.destination{
+    background: #FFFFFF;
+    width: 95%;
+    margin-left: auto;
+border-radius: 11.6484px;
+}
+.destNav{
+    display: flex;
+padding-top: 1.5em;
+    justify-content: space-around;
+}
+.destNav{
+    font-weight: 500;
+font-size: 17.4726px;
+line-height: 23px;
+
+
+color: #717171;
+}
+.destNav p{
+    cursor: pointer;
+    margin-bottom: 0;
+    width: 50%;
+    padding-bottom: 1.5em;
+    text-align: center;
+    border-bottom: 7px solid  #E2E2E2;
+    border-radius:  11.6484px 0;
+}
+.destNav .active{
+    font-weight: 700;
+
+    border-bottom: 7px solid  #009925;
+color: #009925 !important;
+
+}
+.destinationBtn{
+    font-weight: 700;
+font-size: 18.0745px;
+color: white;
+border: none;
+width: 100%;
+position: relative;
+padding: 1em;
+    background: linear-gradient(90deg, #009925 -0.1%, #00741C 112.77%);
+border-radius: 11.6484px;
+
+
+}
+.destinationBtn span{
+position: absolute;
+right: 2em;
+transition: 0.3s;
+}
+.destinationBtn:hover span{
+    right: 1em;
+}
+.distDet{
+    padding: 1em;
+}
+.mobile{
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50vw;
+    width: 36vw;
+    position: absolute;
+    top: -26vh;
+    right: -6vh;
+    max-height: 620px;
+}
+.wrap{
+    white-space: nowrap;
+    border: none !important;
+}
+
+.soon{
+ margin-bottom: 32px;
+font-weight: 400;
+font-size: 16px;
+line-height: 18px;
+letter-spacing: -0.04em;
+text-transform: uppercase;
+
+color: #505050;
+}
+.alignVert{
+    display: flex;
+    align-items: center;
+}
+.soonTxt{
+    font-family: 'Plus Jakarta Sans' !important;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+  
+    
+    color: #000000;
+    
+}
+.logoP{
+    height: fit-content;
+    border-radius: 8.06906px 0px;
+    background-image: linear-gradient( #007B1E, #00D634);
+    display: inline-flex !important;
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+  padding: 7px 0.15em;
+line-height: 0 !important;
+    border: none !important;
+ margin-left: 0.2em;
+ margin-right: 0.1em;
+ position: relative;
+ bottom: 2px;
+   
+    }
+    .logoP span{
+        font-style: normal;
+        border: none !important;
+    font-weight: 700;
+    font-size: 28.8px;
+    color: #000000;
+    margin: 0;
+    line-height: 20px !important;
+    background-color: white;
+    padding: 0.15em 0.15em;
+    
+    }
+   .no1{
+    font-weight: 400;
+    font-size: 20.2494px;
+    line-height: 23px;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    
+    color: #009925;
+    margin-bottom: 0;
+   } 
+   .no1 span{
+    font-weight: 700 !important;   
+   }
+.div2{
+    padding:6em 3em ;
+    padding-bottom: 200px;
+
+}
+.quest{
+    position: relative;
+    border: 1.5px solid #ECECEC;
+    box-shadow: 0px 0px 4px rgba(201, 201, 201, 0.25);
+    border-radius: 12px;
+    padding: 59px 6vw;
+    padding-right: 1vw;
+
+    
+}
+.divTitle{
+
+    font-weight: 700;
+    font-size: 48.1303px;
+    line-height: 55px;
+    /* or 114% */
+    
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    
+    color: #000000;
+    margin-bottom: 1.3em;
+}
+.divTitle span{
+border-bottom:  6.01629px solid #FFD200;;
+}
+
+
+
+.questDiv{
+    background: #FFFFFF;
+    border: 0.92277px solid #ECECEC;
+    border-radius: 9.2277px;
+    padding: 20px;
+    margin-bottom: 0.5em;
+  
+}
+.question{
+ 
+    font-weight: 700;
+    font-size: 20.3009px;
+    line-height: 20px;
+    /* identical to box height, or 100% */
+    margin-bottom: 0;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.question svg{
+    cursor: pointer;
+}
+.answer{
+    margin-top: 0.5em;
+    font-weight: 400;
+font-size: 14.7643px;
+line-height: 29px;
+/* or 194% */
+margin-bottom: 0;
+letter-spacing: -0.03em;
+text-transform: uppercase;
+
+color: #626262;
+}
+.div3Title{
+    font-weight: 700;
+font-size: 30.5455px;
+line-height: 42px;
+/* identical to box height, or 138% */
+
+justify-content: center;
+letter-spacing: -0.03em;
+text-transform: uppercase;
+font-feature-settings: 'salt' on, 'liga' off;
+
+color: #FFFFFF;
+}
+.ul{
+    border-bottom: 6px solid #FFD200;
+}
+.square{
+    padding:0 0.2em ;
+    font-size: 14.7828px !important;
+    border-radius: 3.28508px 0px;
+border: 3px solid white;
+margin:0 0.2em;
+position: relative;
+bottom: 5px;
+margin-left: 0.5em;
+}
+.logoName{
+   border: none !important;
+   font-size:  38.47px;
+}
+.div3Name{
+    font-size: 14.7828px !important;
+    margin-right: 0.5em;
+}
+.div3{
+    text-align: center;
+    background-color: black;
+    padding: 20px  7vw;
+    padding-bottom: 1em;
+   
+}
+.noPadding{
+    padding: 0 !important;
+}
+.qImg{
+    width: 100%;
+    height: 40vw;
+    min-height: 280px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+.featP{
+    font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+
+color: #FFFFFF;
+}
+.featImg{
+    width: 100%;
+
+ height: 25vw;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  margin: auto;
+    max-width: 250px;
+    max-height: 240px;
+ 
+}
+.div2Img{
+    position: relative;
+    display: flex;
+    align-items: end;
+}
+.tri1{
+    width: 20vh;
+    height: 30vh;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 12px;
+}
+
+.tri2{
+    width: 36vh;
+    height: 25vh;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 12px;
+    right: -1vw;
+    bottom: -61px;
+    z-index: -1;
+
+}
+.tri3{
+    width: 36vh;
+    height: 25vh;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 12px;
+    right: -80px;
+    bottom: -129px;
+    z-index: -1;
+
+}
+.footer{
+    padding: 30px  7vw;
+    background-color: black;  
+    text-align: center;
+    padding-top: 30px;
+}
+.footerLogo {
+color: white;
+margin-bottom: 0;
+}
+.footerLogo .logoP {
+    padding: 0.4em;
+    margin-right: 0.5em;
+}
+.footerLogo .logoP span{
+background-color: black;
+color: white;
+}
+.noTime{
+    font-family: 'Plus Jakarta Sans' !important;
+   
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    /* identical to box height, or 165% */
+    
+  
+    margin-bottom: 2em;
+    color: #FFFFFF;
+    
+}
+.footer a{
+    font-weight: 400;
+font-size: 15.0277px;
+line-height: 21px;
+text-decoration: none;
+letter-spacing: -1px;
+font-feature-settings: 'salt' on, 'liga' off;
+margin: 0 1em;
+color: #FFFFFF;
+}
+hr {
+    margin-top: 52px !important;
+    border-top: 1px solid rgb(255, 255, 255) !important;
+    opacity: 1 !important;
+  }
+  .cr{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 30px;
+  }
+  .cr p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    
+    letter-spacing: -0.02em;
+    font-feature-settings: 'salt' on, 'liga' off;
+    
+    /* Text / Gray 300 */
+    
+    color: #D9DBE1;
+  } 
+  a:hover{
+      color: white !important;
+  }
+  
+  .cr button{
+    background: rgb(255, 255, 255,0.1);
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    margin-left: 1.5em;
+    border: none;
+    display: inline-flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+padding: 0;
+
+  }
+  .ig svg{
+position: relative;
+bottom: 1px;
+  }
+  .cr svg{
+      color: white;
+    
+  }
+
+
+.options{
+    padding: 1em;
+    padding-bottom: 0;
+}
+.resNumber{
+    text-align: start;
+    font-weight: 700;
+font-size: 16px;
+line-height: 21px;
+padding-left: 12px;
+/* or 131% */
+color: #000000;
+margin-bottom: 2em;
+}
+
+.resultsDiv{
+    height: calc(100vh - 263.5px);
+    overflow: scroll;
+}
+.result{
+   display: block;
+   border: 2px solid #ECECEC;
+border-radius: 12px;
+display: flex;
+margin-bottom: 1em;
+background-color: white;
+}
+.resImg{
+    border-radius: 12px 0 0 12px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    flex: 1;
+}
+.resDetails{
+    flex: 1.9;  
+    padding: 0.7em ;
+}
+.resTitle{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.resName{
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    /* or 131% */
+    
+    font-feature-settings: 'salt' on, 'liga' off;
+    
+    color: #000000;
+}
+.revNum{
+    font-weight: 500;
+font-size: 14px;
+line-height: 21px;
+display: inline;
+position: relative;
+top: 3px;
+color: #ADADAD;
+margin-left: 0.5em;
+margin-bottom: 0;
+}
+.stars{
+display: flex;
+align-items: center;
+margin-bottom: 1em;
+}
+.resPrice p{
+    font-weight: 400;
+    font-size: 11.5907px;
+    line-height: 13px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.01em;
+    margin-bottom: 0;
+    color: #000000;
+    
+}
+.resPrice span{
+    font-weight: 700;
+    font-size: 19.3178px;
+    line-height: 22px;
+  position: relative;
+    top: 1px;
+    color: #000000;
+    
+}
+.fromLoc{
+    font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: flex-end;
+letter-spacing: 0.01em;
+
+color: #757575;
+}
+.fromLoc span{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.01em;
+    margin-right: 5px;
+    color: #000000;
+
+}
+.reserve{
+    width: 100%;
+    border: none;
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+background: linear-gradient(90deg, #009925 -0.1%, #00741C 112.77%);
+border-radius: 8px;
+letter-spacing: -1px;
+padding: 0.5em 0;
+color: #FFFFFF;
+
+
+}
+.reserve span{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+.pin{
+    background: #FFFFFF;
+box-shadow: 0px 6.31579px 6.31579px rgba(0, 0, 0, 0.25);
+border-radius: 12.6316px 0px;
+padding: 0.5em;
+display: inline-block;
+position: absolute;
+left: 50px;
+bottom: 50%;
+cursor: pointer;
+}
+.pinPrice{
+    font-weight: 700;
+font-size: 20px;
+line-height: 21px;
+margin-bottom: 0;
+
+color: #000000;
+}
+.selectLoc{
+    width: 100%;
+    position: relative;
+    margin-bottom: 1em;
+}
+.selectLoc select{
+    width: 100%;
+    background: #FFFFFF;
+    border: 1.17125px solid #ECECEC;
+    border-radius: 14.055px;
+    padding: 1em;
+    font-weight: 700;
+    font-size: 15.4499px;
+    line-height: 18px;
+  
+    letter-spacing: 0.01em;
+    
+    color: #111111;
+    cursor: pointer;
+    position: relative;
+  padding-top: 1.8em;
+  padding-left: 3em;
+
+}
+select:focus{
+   /* border: 2.17125px solid #007B1E;*/
+
+    outline: none !important;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+  }
+.customSelect{
+    position: relative;
+}
+.slotsNav{
+    background: #F4F4F4;
+    padding: 1em 7vw;
+    text-align: center;
+    z-index: 2;
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+    position: relative;
+}
+.slotsNav .selectLoc{
+    flex: 3;
+width: unset;
+display: inline-block;
+margin-bottom: 0;
+}
+.slotsNav select{
+       flex: 3;
+    padding-bottom: 0.75em;
+}
+.slotsNav .timeDiv{
+    display: inline-block;
+margin-bottom: 0;
+flex: 3;
+}
+.navMargin{
+    margin: 0 0.5em;
+}
+.slotsNav .timeDiv div{
+
+  width: 45% !important;
+  display: inline-block;
+}
+
+.slotsNav .timeDiv{
+}
+.slotsNav  .slotsBtn{
+    flex: 3;
+    font-weight: 700;
+    font-size: 14.1734px;
+    line-height: 15px;
+color: white;
+border: none;
+
+position: relative;
+padding: 1.1em;
+    background: linear-gradient(90deg, #009925 -0.1%, #00741C 112.77%);
+border-radius: 11.6484px; 
+}
+.slotsNav input[type="time"]{
+    padding: 1.5em 1em;
+    padding-bottom: 0.6em;
+}
+.slotsNav .timeDiv div{
+    width: unset;
+
+}
+.customSelect p{
+    position: absolute;
+    z-index: 1;
+    top: 1em;
+    cursor: pointer;
+    pointer-events: none;
+    left: 3.7em;
+    margin-bottom: 0;
+}
+.customSelect .flag{
+    position: absolute;
+    z-index: 1;
+    top: 1em;
+    left: 1em;
+    cursor: pointer;
+    pointer-events: none;
+    color: #009925 !important;
+}
+.dwn{
+    position: absolute;
+    z-index: 3;
+    color: #000000;
+    top: 1em;
+    right: 1em;
+    cursor: pointer;
+    pointer-events: none;
+}
+.timeDiv{
+    display: flex;
+    margin-bottom: 3em;
+    justify-content: space-between;
+  
+}
+.timeDiv div{
+    position: relative;
+    width: 48%;
+}
+.mobShow{
+    display: none;
+}
+.timeDiv p{
+    position: absolute;
+    font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 400;
+font-size: 13.2428px;
+line-height: 15px;
+top: 1em;
+left: 1.15em;
+letter-spacing: 0.01em;
+
+color: #009925;
+}
+.titleDiv1{
+    display: flex;
+    align-items: center;
+}
+input:focus{
+    border-color:  #007B1E;
+    outline: none !important;
+
+}
+.sideBar{
+    display: none;
+}
+input[type="time"]{
+    cursor: pointer;
+    width: 100%;
+background: #FFFFFF;
+border: 1.17125px solid #ECECEC;
+border-radius: 14.055px;
+padding: 1em;
+font-family: 'Ubuntu';
+font-weight: 700;
+padding-top: 2em;
+}
+.datePickerDiv p{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.2428px;
+    line-height: 15px;
+   display: block;
+   text-align: start;
+    letter-spacing: 0.01em;
+  /*  margin-bottom: 0.5em;*/
+  margin-bottom: 0;
+    color: #009925;
+}
+
+.datePickerDiv{
+    margin-bottom: 1em;
+    display: flex;
+    flex: 5;
+    justify-content: space-between;
+}
+.datePickerDiv span{
+    margin: 0 0.5em;
+}
+.datePickerDiv input{
+
+    display: inline-block;
+    cursor: pointer;
+    width: 100%;
+background: #FFFFFF;
+/*
+border: 1.17125px solid #ECECEC;*/
+border:none;
+border-radius: 14.055px;
+/*padding: 1em;*/
+padding: 0;
+font-family: 'Ubuntu';
+font-weight: 700;
+
+}
+.timeDiv1{
+    flex: 1;
+}
+.react-datepicker-wrapper{
+    flex: 1.5;
+    text-align: end;
+}
+.scndInput{
+
+    color: #009925 !important
+    ;
+    text-align: end;
+
+}
+
+.scndInput::placeholder{
+    color: #009925 !important
+    ;
+    text-align: end;
+}
+.datePickerDiv .containTime{
+    border: 1.17125px solid #ECECEC;
+    background-color: white;
+    border-radius: 14.055px;
+padding: 0.5em 1em;
+display: flex;
+align-items: flex-end;
+
+
+}
+.datePickerDiv input:focus{
+    border: none !important;
+}
+#download{
+    position:relative;
+    padding-top:200px;
+}
+input[type="time"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;}
+
+.linkDiv{
+    display: inline;
+}
+.selectRep{
+    width: 100%;
+    background: #FFFFFF;
+border: 1.17125px solid #ECECEC;
+border-radius: 14.055px;
+padding: 1em;
+z-index: 2;
+cursor: pointer;
+position: relative;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.flag div{
+display: inline-block;
+}
+.selectRep svg{
+    color: black ;
+}
+.flag{
+    display: flex;
+    align-items: center;
+}
+.flag svg{
+    color: #009925 !important;
+    margin-right: 1em;
+}
+.flag p{
+    margin-bottom: 0;
+}
+.logoa{
+    margin:0 !important;
+}
+.stepNo{
+    font-weight: 400;
+    font-size: 13.2428px;
+    line-height: 15px;
+  
+    letter-spacing: 0.01em;
+    
+    color: #009925;
+}
+.menuOpen{
+  min-width: 230px;
+    position: fixed;
+    background-color: black;
+  height: 100vh;
+  padding: 1em ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28vw;
+  padding-top: 130px;
+padding-left: 1em;
+z-index: 9;
+transition: 1s ease-in-out;
+}
+
+.menuOpen .loginBtn{
+width: 100%;
+margin-bottom: 1em;
+}
+.menuOpen .sinupBtn{
+    width: 100%;
+}
+.closed{
+  
+transform: translateX(calc(-28vw));
+}
+.blckLogo .menuIcon{
+background-color: rgba(0, 0, 0, 0.782);
+
+}
+
+.menuOpen a{
+    display: block;  font-weight: 400;
+    font-size: 15.0277px;
+    line-height: 21px;
+    /* identical to box height, or 143% */
+    margin-bottom: 1em;
+    letter-spacing: -1px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    cursor: pointer;
+    color: #FFFFFF;
+    
+}
+.sideBar .navBar{
+    padding: 0;
+}
+.sideBar .navLogo{
+display: inline-block;
+}
+.menuIcon svg{
+    cursor: pointer;
+}
+.menuIcon{
+    display: flex;
+    align-items: center;
+
+padding: 1em 3vw;
+padding-bottom: 0.4em;
+border-radius: 0 0 12px 0;
+}
+.menuIcon path{
+    stroke: white;
+    display: inline-block;
+}
+.selectDest{
+    font-weight: 700;
+    font-size: 15.4499px;
+    line-height: 18px;
+  
+    letter-spacing: 0.01em;
+    
+    color: #111111;
+}
+.datePickerDiv .containTime{
+    width: 100%;
+    position: relative;
+}
+.question span{
+max-width: 85%;
+}
+.pin .divTitle{
+text-align: center;
+   line-height: 33px;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 5px;
+}
+.pinRate{
+    text-align: center;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.3em;
+    font-size: 18px;
+    color: #000000;
+}
+.pinRate svg{
+    color: rgb(255, 203, 69);
+
+}
+.pin .logoP{
+    margin: auto !important;
+}
+.showMob{
+    display: none;
+}
+.reserveScreen{
+    padding: 8em 7vw;
+    position: relative;
+    min-height: 100vh;
+}
+.reserveScreen .resName{
+    font-size: 22.7643px;
+margin-bottom: 0.3em;
+}
+.reserveTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.reserveTop button{
+    padding: 1em 3vw;
+    width:unset;
+}
+.resNumbers{
+    margin-top: 1em;
+    padding: 1em 0;
+    margin-bottom: 3em;
+    background-color: #d8d6d663;
+}
+.num1{
+
+    font-weight: 600;
+    font-size: 15.7643px;
+    line-height: 15px;
+    margin-bottom: 0;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: black; 
+}
+
+.midDiv{
+    border: 1.5px solid #8d8b8b3c;
+    border-style: none solid none solid;
+
+}
+.num2{
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 15.7643px;
+    line-height: 29px;
+    margin-bottom: 0;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #626262; 
+}
+.info{
+    margin-top: 2em;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 17.7643px;
+    line-height: 29px;
+    margin-bottom: 0;
+    letter-spacing: -0.03em;
+    color: #626262;   
+}
+.reservable{
+    font-weight: 700;
+    font-size: 15.7643px;
+    line-height: 29px;
+    margin-bottom: 0;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #009925; 
+}
+.resNumbers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2em;
+    text-align: center;
+    padding-bottom: 0em;
+}
+.resNav{
+    border-bottom: 1px solid rgba(118, 114, 114, 0.392);
+
+}
+.resNumbers div{
+    padding-bottom: 0.5em;
+    flex: 1;
+ 
+}
+.resNav{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.resNav p{
+    padding-bottom: 0.5em;
+    flex: 1;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16.7643px;
+    line-height: 29px;
+    margin-bottom: 0;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #626262;
+}
+.activeNum {
+    border-bottom: 4px solid #009925;
+
+}
+.activeNum{
+    color: #009925 !important;
+    font-weight: 600 !important;
+
+}
+
+.resData{
+    font-weight: 400;
+    font-size: 16.7643px;
+    line-height: 29px;
+    margin-bottom: 0;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #626262;
+}
+.reservMob{
+    display: none;
+}
+.resData .star{
+color: rgb(250, 207, 16);
+position: relative;
+bottom: 1px;
+}
+.reserveTop .resName{
+    max-width:  unset !important;
+}
+.reviews{
+    margin-top: 2em;
+    align-items: center;
+}
+.reviews .resPrice p{
+    font-size: 14px;
+color: #717171;
+}
+
+.reviews .resImg{
+    border-radius: 100%;
+    width: 12vw;
+    height: 12vw;
+    flex: none;
+    min-height: 100px;
+    min-width: 100px;
+}
+.revCircle{
+    padding-left: 1.5em;
+
+}
+.reviews .resDetails{
+flex: 3;
+padding: 1.5em;
+}
+.reviews .fromLoc{
+    font-size: 16px;
+    line-height: 20px;
+
+}
+.infoImg{
+  
+    margin-top: 2em;
+}
+.infoImg img{
+    width: 100%;
+}
+.parkImg{
+    border-radius: 8px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25vw;
+}
+.reserveModal, .modalOverlay {
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 11;
+}
+
+.modalOverlay {
+    background: rgba(49,49,49,0.8);
+}
+.modalBody{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+    }
+.modal-content {
+    position: fixed !important ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 1em;
+    border-radius: 20px;
+  
+    z-index: 12;
+
+   display: unset !important;
+width: 500px ;
+height: 571px;
+}
+.pinPrice svg{
+    position: relative;
+    bottom: 3px;
+}
+@media screen and (min-width:901px) {
+.menuOpen{
+    display: none;
+}}
+@media screen and (max-width:820px) {
+    .closed{
+  
+        transform: translateX(-230px);
+        }
+}
+@media screen and (max-width:965px) {
+    .result{
+   display: block;
+    }
+    .reviews{
+        display: flex;
+    }
+    .slotsNav {
+        padding: 1em 
+    }
+    .slotsNav .slotsBtn{
+        flex: 2;
+    }
+    .resName{
+        max-width: 70%;
+    }
+    .resImg{
+        height: 20vw;
+        border-radius: 12px 12px 0 0 ;
+    }
+}
+    @media screen and (max-width:1213px) {
+    .mobile{
+        position: relative;
+       top: auto;
+       height: 43vw;
+    }
+    .tri3{
+        bottom: -34px
+    }
+    .quest{  
+            padding: 2em 5em !important;  
+}}
+@media screen and (max-width:1120px) {
+    .navBar{
+        padding: 0px 3vw;
+        padding-top: 31px;
+        padding-bottom: 18px;
+    }
+    .reserveScreen{
+        padding: 8em 3vw;
+ 
+    }
+   
+    .slotsNav{
+        padding: 10px 3vw;
+
+    }
+    .div1{
+        padding: 0px 3vw;
+ 
+    }
+}
+
+@media screen and (max-width:975px) {
+ 
+    .loginBtn{
+        padding: 10px 33px
+    } 
+    .sinupBtn{
+        padding: 8px 33px
+
+    }  
+}
+@media screen and (max-width:875px) {
+    .datePickerDiv .containTime{
+        padding: 0.5em;
+    }
+}
+@media screen and (max-width:835px) {
+
+    .destination{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .datePickerDiv input{
+      
+        font-size: 15px;
+    }
+    .hideNav{
+        display: none;
+    }
+    .sideBar{
+        display: block;
+    }
+   
+}
+
+@media screen and (max-width:960px) {
+    .destinationBtn{
+        text-align: start;
+        font-size: 17.0745px;
+    }
+    .destinationBtn span{
+        right: 1em;
+    }
+    .destinationBtn:hover span{
+        right: 0.5em;
+    }
+}
+@media screen and (max-width:767px) {
+    .datePickerDiv p{
+        font-weight: 700;
+    }
+    .resultsDiv{
+        height: unset;
+    }
+    .slots{
+        position: relative;
+        padding: 1em 0;
+    }
+    .slotsNav .slotsBtn{
+        display: none;
+    }
+    .slotsNav{
+        position: absolute;
+        width: 100%;
+        background: transparent !important;
+    }
+    .resultsDiv{
+padding: 0 1em;
+    }
+    .pinPrice{
+        font-size: 16px;
+    }
+    .pin .divTitle{
+        margin-bottom: 5px;
+    }
+    .slotsNav{
+        flex-direction: column;
+    }
+    .slotsNav .selectLoc{
+        width: 100%;
+        margin-bottom: 0.5em;
+    }
+    .resName{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .resPrice span{
+        font-size: 14px;
+   position: relative;
+   top: 4px;
+   margin-right: 5px;
+    }
+    .fromLoc{
+        display: flex;
+        align-items: center;
+    }
+    .reserve{
+        font-size: 13px;
+    } .reserve span{
+        font-size: 14px;
+    }
+    .slotsNav .timeDiv{
+        width: 100%;
+    }
+    .slotsNav .timeDiv div {
+        width: 47% !important;
+    }
+    .options{
+padding: 1em 4vw;
+    }
+    .mapDiv{
+        height: 80vh;
+    }
+    .noShow{
+        display: none;
+    }
+    .mobShow{
+        display: block;
+    }
+    .mobile{
+        position: absolute;
+        bottom: -19em;
+    
+        right: 8vw;
+        height: 61vw;
+        width: 45vw;
+        min-height: 400px;
+        min-width: 300px;
+    }
+    .soonTxt{
+padding-bottom: 20vw;
+    }
+    #download{
+        padding-top: 60px;
+    }
+    .quest{    padding: 35px 4vw;
+
+    }
+   
+.tri2{
+  
+    width: 31vh;
+    height: 22vh;
+    right: -4vw;
+    bottom: -63px;
+
+}
+    .showMob{
+        display: inline-block;
+        margin-bottom: 1em;
+    }
+    .hideMob{
+        display: none;
+    }
+    .p3{
+        margin-bottom: 9vw;
+     
+    }
+    .destination{
+        width: 100%;
+    }
+    .div1{
+        height: unset;
+    }
+}
+@media screen and (max-width:821px) {
+    .divTitle{
+        margin-bottom: 0.9em;
+    }
+   
+}
 @media screen and (max-width:700px) {
     .otpDiv input{
 margin-right: 0.7em;
@@ -361,19 +2038,340 @@ min-height: 40px;
     }
 
 }
+@media screen and (max-width:736px) {
+    .logoP{
+        margin-left: 0;
+    }
+   
+}
+@media screen and (max-width:575px) {
+    .parkImg{
+        height: 35vw;
+    }
+
+    .stars{
+        margin-bottom: 0.5em;
+    }
+    .fromLoc{
+        margin-bottom: 0.5em;
+    }
+    .resImg{
+        height: auto;
+        border-radius: 12px 0 0 12px;
+        flex: 1;
+    }
+    .result{
+        display: flex;
+    }  
+    .options{
+        padding:1em  0;
+    }
+}
 
 @media screen and (max-width:550px) {
+   
+    .confirm1{
+        font-size: 20px;
+    }
+    .confirm{
+        font-size: 14px;
+
+    }
+    .confirm2{
+        font-size: 16px;
+    }
+    .signInForm{
+        width: 90vw;
+        max-width: unset;
+    }
+    .reviews .resDetails{
+        padding:1em 0.5em;
+    }
+    .reviews .fromLoc{
+        font-size: 14px;
+        margin-top: 0.5em;
+    }
+    .revCircle{
+        padding-left: 0.5em;
+    }
+    .reserveScreen .stepNo{
+        font-size: 15px !important;
+padding: 0.9em 1em;
+    }
+    .stepTitle{
+        font-size: 15px;
+
+    }
+    .stepInfo{
+        font-size: 13px;
+
+    }
+    .info{
+        font-size: 15px;
+    }
+    .reservMob{
+        display: block;
+        bottom: 1em;
+        padding: 1em 0;
+        margin-top: 2em;
+        position: absolute;
+        width: 95%;
+    }
+    .resNumbers{
+        margin: 1.5em 0;
+    }
+    .resNav p{
+        font-size: 14px;
+ 
+    }
+    .resNumbers p{
+        font-size: 14px;
+    }
+    .reserveTop button{
+        display: none;
+    }
+    .reserveScreen .resName{
+        font-size: 18px;
+    }
+    .resData{
+        font-size: 14px;
+ 
+    }
+.resData svg{
+    transform: scale(0.9);
+}
+.reservable{
+    font-size: 14px;
+
+}
+    .datePickerDiv input{
+        font-size: 14px;
+    }
+    .errBanner p{
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .sinupBtn{
+        font-size: 14px;
+        padding: 7px 29px;
+    }
+    .loginBtn{
+        font-size: 14px;
+        padding: 6px 34px;
+    }
+    .linkDiv{
+     display: flex;
+     justify-content: space-between;
+    }
+    .quest{
+        padding: 2em 3vw !important;
+      margin-bottom: 1em;
+    }
+    .quest2{
+        margin-bottom: 7em;
+
+    }
+    .no1{
+        font-size: 13.9905px;
+        margin-bottom: 0.5em;
+line-height: 16px;
+    }
+    .logoP span{
+        font-size: 19.9352px;
+line-height: 13px;
+padding: 0.05em 0.15em;
+    }
+    .mobile{
+        right: 10vw;
+       
+    }
+    .logoName{
+        font-size: 26.5802px;
+line-height: 22px;
+    }
+    .soonTxt{
+        font-size: 14.8744px;
+line-height: 17px;
+padding-bottom: 35vw;
+    }
+    .soon{
+        
+        font-size: 13.0545px;
+line-height: 13px;
+margin-bottom: 2em;
+    }
+    .featImg {
+        margin-bottom: 1em;
+        height: 32vw;}
+    .div3Title{
+        font-size: 23.8556px;
+        line-height: 34px; 
+        margin-bottom: 1.5em; 
+    }
+    .ul{
+        border-bottom: 4px solid #FFD200;
+    }
+   .tri1 {
+   
+        height: 12vh;}
+    .tri2{
+  
+        width: 22vh;
+        height: 20vh;
+        bottom: -71px;
+    
+    }
+    .div2{
+        
+    }
+    .mobile{
+       min-width: unset;
+       min-height: unset;
+       height: 65vw;
+       width: 64vw;
+       bottom: -31vw;    }
+    .tri3{
+  
+        width: 22vh;
+        height: 20vh;
+        bottom: -73px;
+    right: -3vw;
+    }
+
+    .logoP{
+        margin-top: 0.3em;
+    }
+    .ig{
+      margin-left: 0 !important;
+    }
+    .footer a{
+        font-size: 13px;
+      margin-left: 0;
+      text-align: start;
+    }
+    .lastLink{
+        margin-right: 0 !important;
+    }
+  
+    .cr{
+flex-direction: column;
+    }
+    .answer{
+        font-size: 13.2322px;
+        line-height: 18px;   
+    }
+    .questDiv{
+        padding: 15px;
+    }
+    .showMob{
+        min-height: 248px;
+    }
+    .divTitle{
+        font-size: 26.2322px;
+line-height: 30px;
+    }
+    .divTitle span{
+        border-bottom: 3.01629px solid #FFD200;
+    }
+    .div2 {
+        padding:2em 7vw;}
+    .question span{
+        font-size: 13.8744px;
+line-height: 17px;
+    }
+    .questDiv svg{
+        transform: scale(0.7);
+    }
+    .p1{
+        font-size: 28px;
+        line-height: 42px;
+    }
+    .p1 span{
+        font-size: 28px;
+
+    }
+    .p3{
+        margin-bottom: 12vw;
+        font-size: 14.2239px;
+line-height: 21px;
+    }
+    .customSelect svg{
+transform: scale(0.7);
+
+    }
+    .flag{
+        left: 0.8em !important;
+    }
+    .recents div{
+        font-size: 12px;
+    }
+    .destinationBtn{
+        font-size: 14px;
+    }
+    .destination span{
+        transform: scale(0.8);
+  bottom: 0.6em;
+    }
+    .timeDiv{
+        margin-bottom: 1em;
+    }
+    .stepNo{
+left: 3.3em !important;
+    }
+    .destination{
+        width: 100%;
+    }
+    .div1{
+        height: unset;
+        min-height: 100vh;
+    }
+    .div1 .row{
+        padding-top: 9em;
+    }
+    .destNav p{
+        font-size: 13.5029px;
+line-height: 15px;
+    }
+    .selectLoc select{
+font-size: 14px;
+    }
+
     .signInForm{
 padding: 25px;
 
+    }
+    .slots{
+        padding: 0;
+        padding-top: 1em;
+    }
+    .usrProfile svg{
+        transform: scale(0.9);
+    }
+    .usrProfile p{
+        font-size: 14px;
+        margin-left: 0.2em;
     }
 
 }
 
 @media screen and (max-width:450px) {
+ 
+    .reserveScreen{
+        padding-top: 8em;
+    }
+    .slots{
+        padding: 5px 0;
+    }
     .logIn-title{
 font-size: 20px;
 line-height: 22px;
+    }
+    .blckBg{
+        padding-top: 1em;
+    }
+    .loginBtn{
+        margin: 0;
+        margin-bottom: 0.5em;
     }
     .logIn-txt{
         font-size: 13px;
@@ -399,7 +2397,7 @@ line-height: 22px;
         font-size: 14px;
     }
     .errBanner{
-padding: 15px;
+padding: 8px;
 width: 62%;
     }
     .logo p{
@@ -426,4 +2424,29 @@ line-height: 35px;
     }
     .signIn input[type=password]{
         padding: 0.965em !important;    }
+        
+}
+@media screen and (max-width:450px) {
+
+    .slotsBtn{
+        display: flex;
+        flex-direction: column;
+    }
+    .result{
+        display: block;
+
+    }
+    .reviews{
+        display: flex;
+    }
+    .resImg{
+        height: 40vw;
+        border-radius: 12px 12px 0 0;
+    }
+    .stars{
+        margin: 0;
+    }
+    .fromLoc{
+        margin: 1em 0;
+    }
 }

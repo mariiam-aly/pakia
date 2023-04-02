@@ -6,7 +6,10 @@ import { useState,useRef } from "react";
 import {RiUpload2Fill} from "react-icons/ri";
 import {BsCheckCircleFill} from "react-icons/bs";
 import ImgModal from "../components/ImgModal";
+import { useNavigate } from "react-router-dom";
+
 function Files() {
+    const history=useNavigate()
 
     const[idFront,setIdFront]=useState({msg:'',value:false,files:'' })
     const[idBack,setIdBack]=useState({msg:'',value:false,files:'' })
@@ -24,7 +27,14 @@ const driverBackRef=useRef()
 
 
 function handleSubmit(){
+
+    let doneIdFrnt=false
+    let doneIdBk=false
+    let doneDriverFrnt=false
+    let doneDriverBk=false
+
     if(idFrontRef.current.value==""){
+        doneIdFrnt=false
         setIdFront({...idFront,
             msg:"Please upload national id from side",
         value:true,
@@ -33,6 +43,7 @@ function handleSubmit(){
       setErr(true)
     }
     else{
+        doneIdFrnt=true
         setIdFront({
             ...idFront,
         msg:"",
@@ -41,6 +52,7 @@ function handleSubmit(){
     }
    
     if(idBackRef.current.value==""){
+        doneIdBk=false
         setErr(true)
 
         setIdBack({
@@ -51,6 +63,7 @@ function handleSubmit(){
       
     }
     else{
+        doneIdBk=true
         setIdBack({
             ...idBack,
 
@@ -59,6 +72,7 @@ function handleSubmit(){
       }) }
 
       if(driverFrontRef.current.value==""){
+        doneDriverFrnt=false
         setErr(true)
 
         setDriverFront({
@@ -71,6 +85,7 @@ function handleSubmit(){
       
     }
     else{
+        doneDriverFrnt=true
         setDriverFront({
             ...driverFront,
 
@@ -80,6 +95,7 @@ function handleSubmit(){
 }
 
 if(driverBackRef.current.value==""){
+    doneDriverBk=false
     setErr(true)
 
     
@@ -94,6 +110,7 @@ if(driverBackRef.current.value==""){
 }
 
 else{
+    doneDriverBk=true
     setDriverBack({
         ...driverBack,
 
@@ -101,6 +118,12 @@ else{
     value:false 
   })
 }
+
+
+if(doneIdFrnt==true && doneIdBk==true && doneDriverFrnt==true && doneDriverBk==true){
+    localStorage.setItem("token",true)
+    history("/")
+  }
 
 }
 
@@ -164,7 +187,7 @@ return(
 
 <div className="signIn-action">
 <p></p>
-<button onClick={handleSubmit}>Confirm</button>
+<button onClick={handleSubmit}>CONFIRM</button>
 
 </div>
 </div>

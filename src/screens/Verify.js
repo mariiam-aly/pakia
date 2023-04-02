@@ -130,7 +130,7 @@ return(
 <div style={{marginTop:"6em"}} className="signIn-action">
 <p></p>
 
-<button className="btnLink" onClick={handleVerify}>Confirm</button>
+<button className="btnLink" onClick={handleVerify}>CONFIRM</button>
 </div>
 </div>
 </div>

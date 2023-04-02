@@ -6,14 +6,14 @@ import { useNavigate } from "react-router-dom";
 import { ImCross } from "react-icons/im";
 function SignUp() {
     const history=useNavigate()
- 
+ localStorage.setItem("prev","signUp")
     const[errName,setErrName]=useState({msg:'',value:false })
     const[errPhone,setErrPhone]=useState({msg:'',value:false })
     const[errPass,setErrPass]=useState({msg:'',value:false})
     const[errConfirm,setErrConfirm]=useState({msg:'',value:false  })
     const[banner,setBanner]=useState(false)
 
-
+ 
 const nameRef=useRef()
 const phoneRef=useRef()
 const passRef=useRef()
@@ -194,7 +194,7 @@ return(
 
 <input  className={errConfirm.value?"invalid":null} type="password" ref={confirmRef}  placeholder="CONFIRM PASSWORD "/>
 <div className="signIn-action">
-<p>IF YOU ARE AN EXISTING USER, <Link to="/"><span> SIGN IN</span></Link></p>
+<p>IF YOU ARE AN EXISTING USER, <Link to="/sign-in"><span> SIGN IN</span></Link></p>
 <button type="submit">SIGN UP</button>
 
 </div>
